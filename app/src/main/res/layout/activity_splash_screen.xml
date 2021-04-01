@@ -17,19 +17,18 @@
         android:layout_centerInParent="true"
         android:src="@drawable/android"
         android:id="@+id/simg"
-        >
+        />
 
-    </ImageView>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/baloo_tamma"
+       android:textStyle="bold"
         android:gravity="center"
         android:textColor="#F81616"
-        android:text="Abdullah-gifts"
+        android:text="Android-Apps"
         android:id="@+id/s_txt"
-
-        android:textSize="40dp"></TextView>
+        android:textSize="45dp"/>
 
 </LinearLayout>
