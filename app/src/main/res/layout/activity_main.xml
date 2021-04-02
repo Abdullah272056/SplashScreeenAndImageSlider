@@ -8,6 +8,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 <ViewFlipper
+
+    android:background="#0DD4ED"
     android:layout_gravity="center"
     android:id="@+id/viewFlipperId"
     android:layout_width="match_parent"

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -50,9 +52,15 @@ for (int i=0;i<imageArray.length;i++){
         imageView.setBackgroundResource(image);
         flipper.addView(imageView);
         flipper.setAutoStart(true);
-        flipper.setFlipInterval(2000);
-        //flipper.setAnimation();
+        flipper.setFlipInterval(3000);
+//       Animation topAnim= AnimationUtils.loadAnimation(this,R.anim.top_anim);
+//        //flipper.setAnimation(topAnim);
         flipper.setInAnimation(this,android.R.anim.slide_in_left);
         flipper.setOutAnimation(this,android.R.anim.slide_out_right);
+
+       // flipper.setInAnimation(this,android.R.anim.fade_in);
+        //flipper.setOutAnimation(this,android.R.anim.fade_out);
+//        flipper.setOutAnimation(this,R.anim.top_anim);
+//        flipper.setOutAnimation(this,R.anim.bottom_anim);
     }
 }
