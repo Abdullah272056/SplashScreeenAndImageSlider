@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
-    Animation topAnim,bottomAnim,shakeAnim;
+    Animation topAnim,bottomAnim,shakeAnim,rotate;
     ImageView imageView;
     TextView textView;
     @Override
@@ -21,12 +21,13 @@ public class SplashScreen extends AppCompatActivity {
         topAnim= AnimationUtils.loadAnimation(this,R.anim.top_anim);
         bottomAnim= AnimationUtils.loadAnimation(this,R.anim.bottom_anim);
         shakeAnim= AnimationUtils.loadAnimation(this,R.anim.shake);
+        rotate= AnimationUtils.loadAnimation(this,R.anim.rotate);
 
         imageView=findViewById(R.id.simg);
         textView=findViewById(R.id.s_txt);
 
         imageView.setAnimation(topAnim);
-        textView.setAnimation(bottomAnim);
+        textView.setAnimation(rotate);
 
 
         new Handler().postDelayed(new Runnable() {
