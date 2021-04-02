@@ -14,6 +14,14 @@
     android:id="@+id/viewFlipperId"
     android:layout_width="match_parent"
     android:layout_height="220dp"/>
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="1000"
+        app:iss_delay="0"/>
+
 
     <TextView
         android:padding="10dp"
